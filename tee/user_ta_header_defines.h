@@ -35,21 +35,10 @@
 /* To get the TA UUID definition */
 #include <hello_world_ta.h>
 
-#define HELLO_RPI_OPTEE_UUID                                 \
-  {                                                          \
-    0xCFF75836U, 0x9787U, 0x4FDBU,                           \
-    {                                                        \
-      0xA0U, 0xA9U, 0xD1U, 0x2CU, 0x76U, 0xFDU, 0xCCU, 0x3DU \
-    }                                                        \
-  }
-
-#define TA_HELLO_WORLD_UUID                          \
-  {                                                  \
-    0x8aaaf200, 0x2450, 0x11e4,                      \
-    {                                                \
-      0xab, 0xe2, 0x00, 0x02, 0xa5, 0xd5, 0xc5, 0x1b \
-    }                                                \
-  }
+#define HELLO_RPI_OPTEE_UUID                                                                      \
+    {                                                                                             \
+        0xCFF75836U, 0x9787U, 0x4FDBU, { 0xA0U, 0xA9U, 0xD1U, 0x2CU, 0x76U, 0xFDU, 0xCCU, 0x3DU } \
+    }
 
 #define TA_UUID HELLO_RPI_OPTEE_UUID
 
@@ -72,13 +61,10 @@
 #define TA_DESCRIPTION "Example of OP-TEE Hello World Trusted Application"
 
 /* Extra properties */
-#define TA_CURRENT_TA_EXT_PROPERTIES                        \
-  {"org.linaro.optee.examples.hello_world.property1",       \
-   USER_TA_PROP_TYPE_STRING,                                \
-   "Some string"},                                          \
-  {                                                         \
-    "org.linaro.optee.examples.hello_world.property2",      \
-        USER_TA_PROP_TYPE_U32, &(const uint32_t) { 0x0010 } \
-  }
+#define TA_CURRENT_TA_EXT_PROPERTIES                                                                           \
+    {"org.linaro.optee.examples.hello_world.property1", USER_TA_PROP_TYPE_STRING, "Some string"},              \
+    {                                                                                                          \
+        "org.linaro.optee.examples.hello_world.property2", USER_TA_PROP_TYPE_U32, &(const uint32_t) { 0x0010 } \
+    }
 
 #endif /* USER_TA_HEADER_DEFINES_H */
