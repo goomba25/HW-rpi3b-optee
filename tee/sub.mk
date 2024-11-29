@@ -1,4 +1,5 @@
 global-incdirs-y += include
+global-incdirs-y += ../common
 
 srcs-y += src/main.c
 

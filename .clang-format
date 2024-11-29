@@ -5,10 +5,6 @@ AlignConsecutiveMacros:
   Enabled: true
   AcrossEmptyLines: true
   AcrossComments: false
-AlignConsecutiveAssignments:
-  Enabled: true
-  AcrossEmptyLines: true
-  AcrossComments: false
 AlignArrayOfStructures: Right
 AllowShortEnumsOnASingleLine: false
 BreakBeforeBraces: Custom
